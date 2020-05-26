@@ -29,7 +29,7 @@ body {
 
 .top {
     height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(place.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(place.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -37,7 +37,7 @@ body {
 
 .budget {
     position: absolute;
-    width: 350px;
+    /* width: 350px; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -63,6 +63,7 @@ body {
 .budget-expenses {
     padding: 12px;
     text-transform: uppercase;
+    border-radius: 4px;
 }
 
 .budget-income {
