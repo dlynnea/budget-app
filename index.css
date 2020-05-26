@@ -195,8 +195,8 @@ h2 {
     margin-bottom: 15px;
 }
 
-.income-title { color: #28B9B5; }
-.expenses-title { color: #FF5049; }
+.income-title { color: rgb(47, 155, 152) }
+.expenses-title { color: rgb(218, 93, 89); }
 
 .item {
     padding: 13px;
