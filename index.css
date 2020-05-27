@@ -160,7 +160,7 @@ body {
 }
 
 .add-button:hover {
-    /* color: red; */
+    color: #fff;
 }
 
 .add-button:active { transform: translateY(2px); }
