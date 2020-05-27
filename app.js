@@ -15,13 +15,15 @@ var UIController = (function() {
 // app controller
 var controller = (function(budgetCtrl, UICtrl) {
 
-    document.querySelector('.add-button').addEventListener('click', function() {
-        
-    });
+    var addItem = function() {
+        console.log("click")
+    }
+
+    document.querySelector('.add-button').addEventListener('click', addItem);
 
     document.addEventListener('keypress', function(event) {
         if(event.keyCode === 13 || event.which === 13) {
-            
+            addItem();
         }
     });
 
