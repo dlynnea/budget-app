@@ -4,7 +4,6 @@ var budgetController = (function() {
     
 })();
 
-
 // UI controller
 var UIController = (function() {
 
@@ -30,7 +29,6 @@ var UIController = (function() {
     };
 
 })();
-
 
 // app controller
 var controller = (function(budgetCtrl, UICtrl) {
