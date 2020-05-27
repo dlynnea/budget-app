@@ -8,13 +8,19 @@ var budgetController = (function() {
 // UI controller
 var UIController = (function() {
 
+    var DOMstrings = {
+        inputType: '.add-type',
+        inputDescription: '.add-description',
+        inputValue: '.add-value'
+    }
+
     return {
         getInput: function() {
 
             return {
-                type: document.querySelector('.add-type').value,
-                description: document.querySelector('.add-description').value,
-                value: document.querySelector('.add-value').value,
+                type: document.querySelector(DOMstrings.inputType).value,
+                description: document.querySelector(DOMstrings.inputDescription).value,
+                value: document.querySelector(DOMstrings.inputValue).value,
             }
         }
     };
