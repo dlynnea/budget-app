@@ -8,6 +8,16 @@ var budgetController = (function() {
 // UI controller
 var UIController = (function() {
 
+    return {
+        getInput: function() {
+
+            return {
+                type: document.querySelector('.add-type').value,
+                description: document.querySelector('.add-description').value,
+                value: document.querySelector('.add-value').value,
+            }
+        }
+    };
 
 })();
 
@@ -16,7 +26,8 @@ var UIController = (function() {
 var controller = (function(budgetCtrl, UICtrl) {
 
     var addItem = function() {
-        console.log("click")
+        var input = UICtrl.getInput();
+        console.log(input)
     }
 
     document.querySelector('.add-button').addEventListener('click', addItem);
@@ -25,6 +36,7 @@ var controller = (function(budgetCtrl, UICtrl) {
         if(event.keyCode === 13 || event.which === 13) {
             addItem();
         }
+
     });
 
 
