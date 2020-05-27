@@ -159,6 +159,10 @@ body {
     margin-left: 10px;
 }
 
+.add-button:hover {
+    /* color: red; */
+}
+
 .add-button:active { transform: translateY(2px); }
 
 .add-type:focus,

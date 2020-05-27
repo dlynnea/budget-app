@@ -33,21 +33,31 @@ var UIController = (function() {
 // app controller
 var controller = (function(budgetCtrl, UICtrl) {
 
-    var DOM = UICtrl.getDOMstrings();
+    var setupEventListeners = function () {
+        var DOM = UICtrl.getDOMstrings();
+
+        document.querySelector(DOM.inputBtn).addEventListener('click', addItem);
+    
+        document.addEventListener('keypress', function(event) {
+            if(event.keyCode === 13 || event.which === 13) {
+                addItem();
+            }
+        });
+    };
+
 
     var addItem = function() {
         var input = UICtrl.getInput();
-        console.log(input)
-    }
+    };
 
-    document.querySelector(DOM.inputBtn).addEventListener('click', addItem);
-
-    document.addEventListener('keypress', function(event) {
-        if(event.keyCode === 13 || event.which === 13) {
-            addItem();
+    return {
+        init: function() {
+            console.log('app has started');
+            setupEventListeners();
         }
-
-    });
+    }
 
 
 })(budgetController, UIController);
+
+controller.init();
