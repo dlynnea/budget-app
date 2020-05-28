@@ -13,7 +13,7 @@
 }
 
 body {
-    color: #555;
+    color: rgb(97, 96, 96);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     position: relative;
@@ -28,7 +28,8 @@ body {
 /* top */
 
 .top {
-    height: 40vh;
+    height: 50vh;
+    /* height: 40vh; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.351)), url(color2.jpg);
     background-size: cover;
     background-position: center;
