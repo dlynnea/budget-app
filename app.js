@@ -28,8 +28,8 @@ var budgetController = (function() {
         addItem: function(type, des, val) {
             var newItem, ID;
 
-            ID = 0;
-            
+            ID = data.allItems[type][data.allItems[type].length - 1]
+
             if (type === 'exp') {
                 newItem = new Expense(ID, des, val);
             } else if (type === 'inc') {
@@ -66,7 +66,6 @@ var UIController = (function() {
             return DOMstrings;
         }
     };
-
 })();
 
 // app controller
@@ -84,7 +83,6 @@ var controller = (function(budgetCtrl, UICtrl) {
         });
     };
 
-
     var addItem = function() {
         var input = UICtrl.getInput();
     };
@@ -95,7 +93,6 @@ var controller = (function(budgetCtrl, UICtrl) {
             setupEventListeners();
         }
     }
-
 
 })(budgetController, UIController);
 
