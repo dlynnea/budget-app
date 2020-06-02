@@ -14,7 +14,7 @@
 }
 
 body {
-    color: rgb(97, 96, 96);
+    color: rgb(138, 138, 138);
     font-size: 16px;
     position: relative;
     height: 100vh;
@@ -37,7 +37,6 @@ body {
 
 .budget {
     position: absolute;
-    /* width: 350px; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
