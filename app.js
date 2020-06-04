@@ -43,6 +43,10 @@ var budgetController = (function() {
 
             // return the new element
             return newItem;
+        },
+
+        testing: function() {
+            console.log(data);
         }
     };
 
@@ -89,11 +93,12 @@ var controller = (function(budgetCtrl, UICtrl) {
     };
 
     var addItem = function() {
+        var input, newItem;
         // get the field input data
-        var input = UICtrl.getInput();
+        input = UICtrl.getInput();
 
         // add the item to the bugdet controller
-        budgetCtrl.addItem(input.type, input.description, input.value);
+        newItem = budgetCtrl.addItem(input.type, input.description, input.value);
     };
 
     return {
