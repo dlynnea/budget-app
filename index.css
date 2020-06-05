@@ -68,11 +68,11 @@ body {
 
 .budget-income {
     margin-bottom: 10px;
-    background-color: rgb(47, 155, 152);
+    background-color: rgb(56, 116, 114);
 }
 
 .budget-expenses {
-    background-color: rgb(218, 93, 89);
+    background-color: rgb(172, 94, 92);
 }
 
 .budget-income--text,
