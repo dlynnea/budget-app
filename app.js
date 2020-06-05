@@ -120,7 +120,9 @@ var controller = (function(budgetCtrl, UICtrl) {
     };
 
     var addItem = function() {
+
         var input, newItem;
+        
         // get the field input data
         input = UICtrl.getInput();
 
