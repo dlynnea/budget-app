@@ -103,6 +103,10 @@ var UIController = (function() {
             fields = document.querySelectorAll(DOMstrings.inputDescription + ', ' + DOMstrings.inputValue)
             
             fieldsArr = Array.prototype.slice.call(fields);
+
+            fieldsArr.forEach(function(curr, i, arr) {
+                curr.value = '';
+            });
         },
 
         getDOMstrings: function () {
@@ -138,6 +142,9 @@ var controller = (function(budgetCtrl, UICtrl) {
 
         //add the item to the UI
         UICtrl.addListItem(newItem, input.type);
+
+        //clearing the input fields
+        UICtrl.clearFields();
     };
 
     return {
