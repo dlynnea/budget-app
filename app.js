@@ -162,7 +162,6 @@ var controller = (function(budgetCtrl, UICtrl) {
             //calculate and update budget
             updateBudget();
         }
-
     };
 
     return {
