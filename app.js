@@ -99,7 +99,10 @@ var UIController = (function() {
         },
 
         clearFields: function() {
+            var fields;
             fields = document.querySelectorAll(DOMstrings.inputDescription + ', ' + DOMstrings.inputValue)
+            
+            Array.prototype.slice.call(fields);
         },
 
         getDOMstrings: function () {
