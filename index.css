@@ -29,9 +29,9 @@ body {
 
 .top {
     height: 50vh;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.351)), url(color2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.351)), url(color2.jpg);
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     background-color: rgb(164, 107, 120);
     position: relative;
 }
